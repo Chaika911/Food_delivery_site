@@ -11,7 +11,7 @@ function App() {
       <main className='main'>
         <div className='container'>
 
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <Header />
             <Routes>
               <Route path='/' element={<HomePage />}/>
